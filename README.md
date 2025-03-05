@@ -22,6 +22,29 @@ El objetivo de este proyecto es analizar y comprender el comportamiento de los u
 3. ¿El cambio en el diseño de las fuentes afecta significativamente la conversión?
 4. ¿Hay diferencias estadísticas entre los grupos de control y el grupo de prueba?
 
+### Datos utilizados en la primera parte del proyecto
+
+Hypotheses: breves descripciones de las hipótesis
+Reach: alcance del usuario, en una escala del uno a diez
+Impact: impacto en los usuarios, en una escala del uno al diez
+Confidence: confianza en la hipótesis, en una escala del uno al diez
+Effort: los recursos necesarios para probar una hipótesis, en una escala del uno al diez. Cuanto mayor sea el valor Effort, más recursos requiere la prueba.
+Datos utilizados en la segunda parte del proyecto
+
+orders_us.csv 
+
+transactionId: identificador de pedido
+visitorId: identificador del usuario que realizó el pedido
+date: fecha del pedido
+revenue: ingresos del pedido
+group: el grupo del test A/B al que pertenece el usuario
+
+visits_us.csv 
+
+date: la fecha
+group: grupo del test A/B
+visits: el número de visitas en la fecha especificada para el grupo de test A/B especificado
+
 ### Metodología
 - **Preprocesamiento de datos:** Se ajustaron los nombres de las columnas, se eliminaron duplicados y se filtraron registros incompletos.
 - **Estudiar y comprobar los datos:** Se identica el numero de etapas, promedio de etapas por usuario.
@@ -46,4 +69,4 @@ El objetivo de este proyecto es analizar y comprender el comportamiento de los u
 
 ### Visualizaciones destacadas
 1. **Periodo de tiempo de los datos:** Se Pudo visualizar que la mayoria de datos se concentra en las fechas del 1 al 7 de agosto. 241298 (mas del 99%) filas pertenecen al mes de agosto y 2828 filas al mes de julio. Por lo que trabajaremos con los datos del solo el mes de agosto ya que los demas datos podrian sesgar el panorama. Ya con esta información con los datos que trabajaremos solo cubre Una semana
-![Periodo de tiempo de los datos](https://imgur.com/a/G2Ojzy0)
+![Periodo de tiempo de los datos](https://github.com/monik719/Portafolio/blob/main/assets/histograma%20tiempo.png)
